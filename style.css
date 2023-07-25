@@ -27,7 +27,8 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-img {
+img,
+picture {
 	display: block;
 	max-width: 100%;
 }
@@ -110,6 +111,39 @@ p {
 	border-radius: 0.5rem;
 }
 
+.main__button:hover {
+	cursor: pointer;
+	background-color: hsl(159, 91%, 13%);
+}
+
 .main__button svg {
 	margin-right: 0.4rem;
+}
+
+/* media queries For desktop */
+
+@media (min-width: 35rem) {
+	body {
+		background-color: var(--cream);
+	}
+
+	.main {
+		max-width: 30rem;
+		display: flex;
+		border-radius: 0.5rem;
+	}
+
+	.main__image {
+		height: 100%;
+		object-fit: cover;
+		border-radius: 0.5rem 0 0 0.5rem;
+	}
+
+	.main__child {
+		flex: 1;
+	}
+
+	.article {
+		border-radius: 0 0.5rem 0.5rem 0;
+	}
 }

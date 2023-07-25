@@ -12,9 +12,14 @@
 
   <main class="main">
     <h1 class="main__heading--sr">Perfume Preview</h1>
-    <img class="main__image" src="./images/image-product-mobile.jpg" alt="perfume product">
 
-    <article class="article">
+    <picture class="main__child">
+      <source srcset="./images/image-product-desktop.jpg" media="(min-width:35rem)" />
+
+      <img class="main__image" src="./images/image-product-mobile.jpg" alt="perfume product" />
+    </picture>
+
+    <article class="article main__child">
       <p class="article__para">PERFUME</p>
       <h2 class="article__heading"> Gabrielle Essence Eau De Parfum</h2>
       <p class="article__para--text"> A floral, solar and voluptuous interpretation composed by Olivier Polge,
